@@ -18,7 +18,7 @@ while(e<n+1){
     l.at(e)+=j;
     e+=lsb(e);
 }
-return j
+return j;
 }
 T update(T i,T j){//update j to l_i
     return add(i,j-l.at(i))+j;
