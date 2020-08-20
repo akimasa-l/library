@@ -1,4 +1,7 @@
-class UnionFind:
+import sys
+sys.setrecursionlimit(2*10**5)#必要に応じて
+
+class UnionFind:#再帰上限に引っかかることがあるので
     def __init__(self,n):
         self.l=list(range(n))
         self.n=n
