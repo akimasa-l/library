@@ -8,7 +8,9 @@ class BIT:
     def lsb(self,i):
         return i&(-i)
     def update(self,i,j):
-        k=j-self.l[i]
+        return self.add(i,j-self.l[i])
+    def add(self,i,j):
+        k=j
         e=i
         while e<self.n+1:#1-indexed
             self.l[e]+=k
