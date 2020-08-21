@@ -9,8 +9,12 @@ template<class T> struct BIT{
 using VT=vector<T>;
 T n;
 VT l;
-BIT(const T& num):n(num),l(n+1,0){}
-BIT(const T& num,const T& init_l):n(num),l(n+1,init_l){}
+BIT(const T& num):n(num){
+    l.resize(num+1,0);
+}
+BIT(const T& num,const T& init_l):n(num){
+    l.resize(num+1,init_l);
+}
 T lsb(T i){return i&(-i);}
 T add(T i, T j){//add j to l_i
 T e=i;
