@@ -35,7 +35,3 @@ ll sum(T le){
     return ans;
 }
 };
-
-int main(){
-    
-}
