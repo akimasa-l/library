@@ -1,4 +1,5 @@
-def extgcd(a,b):
+gcd=lambda a,b:gcd(b%a,a)if a!=0 else b
+def extgcd(a,b):#a*lx+b*ly=gcd(a,b)となる(lx,ly)を求める
     x,y,lx,ly=0,1,1,0
     while b>0:
         q=a//b
