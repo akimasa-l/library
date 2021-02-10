@@ -73,10 +73,10 @@ def main():
     n = int(input())
     b = BIT(n)
     l = list(map(int, input().split()))
-    ans = -n
+    ans = 0
     for i in l:
-        b.add(i, 1)
         ans += b.sum(i, n)
+        b.add(i, 1)
     print(ans)
 
 
