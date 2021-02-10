@@ -9,8 +9,8 @@ class BIT:
     def __len__(self) -> int:
         return self.n
 
-    @classmethod
-    def lsb(cls, i) -> int:
+    @staticmethod
+    def lsb(i) -> int:
         return i & (-i)
 
     def update(self, i: int, j: int):
