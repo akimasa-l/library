@@ -1,4 +1,4 @@
-
+![Badge](https://cp-logo.vercel.app/atcoder/akimasa_l)
 # library
 
 競プロ
